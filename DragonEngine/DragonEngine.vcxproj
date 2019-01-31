@@ -22,13 +22,17 @@
     <ClCompile Include="Source\Application\Application.cpp" />
     <ClCompile Include="Source\Engine\Engine.cpp" />
     <ClCompile Include="Source\GraphicsCore\GraphicsCore.cpp" />
+    <ClCompile Include="Source\InputCore\InputCore.cpp" />
     <ClCompile Include="Source\Launch\WindowsLaunch.cpp" />
+    <ClCompile Include="Source\WidgetCore\WidgetCore.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Application\Application.h" />
     <ClInclude Include="Source\Core\Core.h" />
     <ClInclude Include="Source\Engine\Engine.h" />
     <ClInclude Include="Source\GraphicsCore\GraphicsCore.h" />
+    <ClInclude Include="Source\InputCore\InputCore.h" />
+    <ClInclude Include="Source\WidgetCore\WidgetCore.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

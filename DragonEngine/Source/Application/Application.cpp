@@ -1,6 +1,8 @@
 #include "Application.h"
 #include "GraphicsCore/GraphicsCore.h"
 #include "Engine/Engine.h"
+#include "InputCore/InputCore.h"
+#include "WidgetCore/WidgetCore.h"
 
 CApplication* CApplication::Instance = nullptr;
 
@@ -29,6 +31,16 @@ CApplication* CApplication::Init(HINSTANCE hInstance)
 		{
 			Shutdown();
 		}
+
+		if (CInputCore::Init() == nullptr)
+		{
+			Shutdown();
+		}
+
+		if (CWidgetCore::Init() == nullptr)
+		{
+			Shutdown();
+		}
 	}
 
 	return Instance;
@@ -36,6 +48,8 @@ CApplication* CApplication::Init(HINSTANCE hInstance)
 
 void CApplication::Shutdown()
 {
+	CWidgetCore::Shutdown();
+	CInputCore::Shutdown();
 	CGraphicsCore::Shutdown();
 	CEngine::Shutdown();
 
