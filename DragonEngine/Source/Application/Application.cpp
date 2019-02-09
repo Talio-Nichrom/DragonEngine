@@ -56,6 +56,7 @@ void CApplication::Shutdown()
 	if (Instance != nullptr)
 	{
 		delete Instance;
+		Instance = nullptr;
 	}
 }
 
@@ -114,7 +115,8 @@ void CApplication::Render()
 	CGraphicsCore* GraphicsCore = CGraphicsCore::Get();
 	if (GraphicsCore != nullptr)
 	{
-		GraphicsCore->Render();
+		GraphicsCore->Update(0);
+		GraphicsCore->Render(0);
 	}
 }
 

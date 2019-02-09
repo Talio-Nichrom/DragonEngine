@@ -22,5 +22,6 @@ void CEngine::Shutdown()
 	if (Instance != nullptr)
 	{
 		delete Instance;
+		Instance = nullptr;
 	}
 }

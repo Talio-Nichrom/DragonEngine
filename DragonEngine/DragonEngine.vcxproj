@@ -30,6 +30,7 @@
     <ClInclude Include="Source\Application\Application.h" />
     <ClInclude Include="Source\Core\Core.h" />
     <ClInclude Include="Source\Engine\Engine.h" />
+    <ClInclude Include="Source\GraphicsCore\d3dx12.h" />
     <ClInclude Include="Source\GraphicsCore\GraphicsCore.h" />
     <ClInclude Include="Source\InputCore\InputCore.h" />
     <ClInclude Include="Source\WidgetCore\WidgetCore.h" />

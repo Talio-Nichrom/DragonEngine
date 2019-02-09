@@ -21,5 +21,6 @@ void CWidgetCore::Shutdown()
 	if (Instance != nullptr)
 	{
 		delete Instance;
+		Instance = nullptr;
 	}
 }

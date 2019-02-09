@@ -53,5 +53,8 @@
     <ClInclude Include="Source\WidgetCore\WidgetCore.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+    <ClInclude Include="Source\GraphicsCore\d3dx12.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
